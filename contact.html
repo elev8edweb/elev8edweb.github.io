@@ -50,7 +50,10 @@
         </a>
       </div>
 
-      <form action="https://getform.io/f/085c7b72-7cf3-49f1-b26b-454393fe91b8" method="POST" enctype="multipart/form-data"name="EmailForm" class="space-y-8">
+      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+
+          <input type="hidden" name="access_key" value="2948a5c4-c1b4-4d8d-aa7b-4b1e1e4ea0f2">
+
           <div>
               <label for="email" class="block mb-2 text-sm text-left font-medium text-gray-300">Your email</label>
               <input type="email" name="email" id="email" class="shadow-sm text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 shadow-sm-light" placeholder="name@your-email.com" required>
@@ -63,9 +66,13 @@
               <label for="message" class="block mb-2 text-sm text-left font-medium text-gray-300">Your message</label>
               <textarea id="message" name="message" rows="6" class="block p-3 w-full text-sm rounded-lg border shadow-sm bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500 shadow-sm-light" placeholder="Leave your message..." required></textarea>
           </div>
+
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
           <button type="submit" class="w-full py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit bg-blue-800 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800">Send message</button>
       </form>
   </div>
 </section>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
